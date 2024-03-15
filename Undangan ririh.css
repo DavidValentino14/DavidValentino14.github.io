@@ -1,6 +1,8 @@
 :root{
     --pink: #f14e95;
     --bg: #0a0a0a35;
+    --mainC: #6420AA;
+    --messageC: #FF3EA5;
     --shadow: 0 2px 2px rgb(0,0,0/0.5);
 }
 
@@ -14,11 +16,12 @@ body{
     content: '';
     position: absolute;
     background-size:cover;
+    background-position: center;
+    background-image: url(Photos/bg\ ririh2.jpeg);
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(Photos/bg\ ririh2.jpeg);
     z-index: -9999;
 }
 
@@ -48,8 +51,217 @@ body{
     background-color:var(--pink);
 }
 
+.title{
+    font-family: "Satisfy", cursive;
+}
 
 
+
+
+
+
+/* undangan*/
+
+.container{
+    margin: 0;
+    min-width: 99vw;
+    background: linear-gradient(0deg, #ff048a, #fcc4e0)
+}
+
+.main{
+    position: relative;
+    min-height: 100vh;
+    background-color: var(--mainC);
+    padding-top: 7rem;
+}
+
+/* calender start */
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+/* Month header */
+.month {
+  padding: 70px 2rem;
+  width: 70%;
+  background: #1abc9c;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px 0;
+  background-color:#ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important;
+  border-radius: 50%;
+}
+
+/* calender finsh */
+
+.message .fotoA img{
+    width: 8rem;
+    left: 62.5rem;
+    position: absolute;
+}
+
+.message .fotoB img{
+    height: 12rem;
+    left: 17.5rem;
+    position: absolute;
+}
+
+.message{
+    box-sizing: content-box;
+    position: relative;
+    background-color: var(--messageC);
+    z-index: 1;
+    height: 160rem;
+}
+
+.kertas img{
+    height: 25rem;
+    background-size: cover;
+}
+
+.kertas span{
+    display: inline-block;
+    height: 15rem;
+    width: 17rem;
+    line-height: 1.4rem;
+    font-size: 1.6rem;
+    font-family: "Satisfy", cursive;
+}
+
+.message .kertas2 span div, .message .kertas3 span div, .message .kertas6 span div, .message .kertas7 span div, .message .kertas8 span div{
+    height: 0.5rem;
+}
+
+.message .kertasA img{
+    position: absolute;
+    left: 10rem;
+    z-index: 1; 
+}
+
+.message .kertasB img{
+    position: absolute;
+    left: 55rem;
+    z-index: 1;
+}
+
+.message .kertasC img{
+    position: absolute;
+    left: 32.5rem;
+    z-index: 1;
+}
+
+.message .kertasA span{
+    position: relative;
+    left: 15rem;
+    top: 5rem;
+    z-index: 3;
+}
+
+.message .kertasB span{
+    position: relative;
+    left: 60rem;
+    top: 5rem;
+    z-index: 3;
+}
+
+.message .kertasC span{
+    position: relative;
+    left: 36.5rem;
+    top: 5rem;
+    z-index: 3;
+}
+
+.message .kertas5 ul{
+    font-size: 1.3rem;
+    display: block;
+    margin-left: -1rem;
+    margin-top: 1rem;
+}
+
+.message .kertas5 li{
+    margin-top: 0.1rem;
+    line-height: 1.2rem;
+}
+
+.message .kertas9 span img{
+    position:relative;
+    height: 5rem;
+    left: 0;
+    top: -0.5rem;
+    z-index: 3;
+}
+
+.video{
+    position: relative;
+    min-height: 100vh;
+    background-color: #ff5566;
+}
+
+.video video{
+    height: 30rem;
+}
 /* media querry */
 
 /* laptop */
@@ -63,16 +275,95 @@ body{
     html{
         font-size: 65%;
     }
-    .hero::before{
-        left: 40%;
+
+    .message .fotoA img{
+        width: 8rem;
+        left: 48.5rem;
+        position: absolute;
     }
+    
+    .message .fotoB img{
+        height: 12rem;
+        left: 11rem;
+        position: absolute;
+    }
+
+    .message .fotoC img{
+        height: 12rem;
+        left: 11rem;
+        position: absolute;
+    }
+ 
+    .message .kertasA img{
+        position: absolute;
+        left: 3rem;
+        z-index: 1; 
+    }
+    
+    .message .kertasB img{
+        position: absolute;
+        left: 40rem;
+        z-index: 1;
+    }
+
+    .message .kertasC img{
+        position: absolute;
+        left: 22.5rem;
+        z-index: 1;
+    }
+    
+    .message .kertasA span{
+        position: relative;
+        left: 8rem;
+        top: 5rem;
+        z-index: 3;
+    }
+    
+    .message .kertasB span{
+        position: relative;
+        left: 45rem;
+        top: 5rem;
+        z-index: 3;
+    }
+    
+    .message .kertasC span{
+        position: relative;
+        left: 26.5rem;
+        top: 5rem;
+        z-index: 3;
+    }
+    
+    .message .kertas9 span img{
+        position:relative;
+        height: 5rem;
+        left: 0;
+        top: -0.5rem;
+        z-index: 3;
+    }
+
 }
 /* phone */
 @media(max-width:576px){
     html{
         font-size: 60%;
     }
-    .hero::before{
-        left: 30%;
+
+    .message .kertasA img{
+        position: absolute;
+        left: 5rem;
+        z-index: 1; 
+    }
+    
+    .message .kertasB img{
+        position: absolute;
+        left: 55rem;
+        z-index: 1;
+    }
+    
+    .message .kertasC img{
+        position: absolute;
+        left: 32.5rem;
+        /* top: 115rem; */
+        z-index: 1;
     }
 }
