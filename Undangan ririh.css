@@ -25,8 +25,6 @@ body{
     z-index: -9999;
 }
 
-
-
 .hero{
     min-height: 100vh;
     background-color: var(--bg);
@@ -57,21 +55,38 @@ body{
 
 
 
+/* navbar */
 
-
+.mynavbar {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+}
 
 /* undangan*/
 
+
 .container{
-    margin: 0;
-    min-width: 99vw;
-    background: linear-gradient(0deg, #ff048a, #fcc4e0)
+    margin-top: -3.55rem;
+    /* margin: 0; */
+    min-width: 97.5vw;
+    background: linear-gradient(0deg, #ff048a55, #fcc4e055);
+    background-repeat: repeat;
+    z-index: -999;
+}
+
+.container::before{
+    content: '';
+    position: absolute;
+    background-image: url(Photos/bg_template.png);
+    left: 0;
+    width: 100%;
+    min-height: 500%;
+    z-index: -991;
 }
 
 .main{
     position: relative;
     min-height: 100vh;
-    background-color: var(--mainC);
+    /* background-color: var(--mainC); */
     padding-top: 7rem;
 }
 
@@ -156,6 +171,11 @@ body {font-family: Verdana, sans-serif;}
 
 /* calender finsh */
 
+
+.message .ucapan{
+    font-family: "Satisfy", cursive;
+}
+
 .message .fotoA img{
     width: 8rem;
     left: 62.5rem;
@@ -168,10 +188,20 @@ body {font-family: Verdana, sans-serif;}
     position: absolute;
 }
 
+.message .fotoC img{
+    height: 12rem;
+    margin: 0 auto;
+    position: absolute;
+}
+
+.message .fotoK img{
+    top: 122rem;
+}
+
 .message{
     box-sizing: content-box;
     position: relative;
-    background-color: var(--messageC);
+    /* background-color: var(--messageC); */
     z-index: 1;
     height: 160rem;
 }
@@ -256,7 +286,7 @@ body {font-family: Verdana, sans-serif;}
 .video{
     position: relative;
     min-height: 100vh;
-    background-color: #ff5566;
+    /* background-color: #ff5566; */
 }
 
 .video video{
@@ -275,6 +305,10 @@ body {font-family: Verdana, sans-serif;}
     html{
         font-size: 65%;
     }
+
+    /* .sticky-top{
+        overflow: hidden;
+    } */
 
     .message .fotoA img{
         width: 8rem;
@@ -332,14 +366,6 @@ body {font-family: Verdana, sans-serif;}
         top: 5rem;
         z-index: 3;
     }
-    
-    .message .kertas9 span img{
-        position:relative;
-        height: 5rem;
-        left: 0;
-        top: -0.5rem;
-        z-index: 3;
-    }
 
 }
 /* phone */
@@ -348,22 +374,65 @@ body {font-family: Verdana, sans-serif;}
         font-size: 60%;
     }
 
+    .message .fotoA img{
+        width: 8rem;
+        left: 32rem;
+        position: absolute;
+    }
+    
+    .message .fotoB img{
+        height: 12rem;
+        left: 10rem;
+        position: absolute;
+    }
+
+    .message .fotoC img{
+        height: 12rem;
+        left: 11rem;
+        position: absolute;
+    }
+
+    .message .fotoK img{
+        top: 139rem;
+    }
+ 
     .message .kertasA img{
         position: absolute;
-        left: 5rem;
+        left: 2rem;
         z-index: 1; 
     }
     
     .message .kertasB img{
         position: absolute;
-        left: 55rem;
+        left: 24rem;
+        z-index: 1;
+    }
+
+    .message .kertasC img{
+        position: absolute;
+        left: 12.5rem;
         z-index: 1;
     }
     
-    .message .kertasC img{
-        position: absolute;
-        left: 32.5rem;
-        /* top: 115rem; */
-        z-index: 1;
+    .message .kertasA span{
+        position: relative;
+        left: 6.7rem;
+        top: 5rem;
+        z-index: 3;
     }
+    
+    .message .kertasB span{
+        position: relative;
+        left: 29rem;
+        top: 5rem;
+        z-index: 3;
+    }
+    
+    .message .kertasC span{
+        position: relative;
+        left: 17rem;
+        top: 5rem;
+        z-index: 3;
+    }
+
 }
