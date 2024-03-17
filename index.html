@@ -22,11 +22,11 @@
             <h1>Ana Maria Ririh Sinung Prasetyandari</h1>
             <p>25 Maret 2024</p>
 
-            <a href="#main" class = "btn btn-lg mt4">Sweet Twenty</a>
+            <a href="#main" class = "button btn btn-lg mt4">Sweet Twenty</a>
         </main>
     </section>
 
-    <nav class="navbar navbar-expand-md bg-body-tertiary sticky-top">
+    <nav class="navbar navbar-expand-md bg-body-tertiary sticky-top mynavbar">
       <div class="container-fluid">
         <a class="navbar-brand title" href="#">Ririh Sinung Prasetyandari</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -37,19 +37,24 @@
             <h5 class="offcanvas-title title" id="offcanvasNavbarLabel">Ririh Sinung Prasetyandari</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
+
           <div class="offcanvas-body">
             <div class="navbar-nav ms-auto">
-              <a class="nav-link" href="#main">Main</a>
+              <a class="nav-link" href="#main">Your day</a>
               <a class="nav-link" href="#message">Message</a>
               <a class="nav-link" href="#video">HBD</a>
             </div>
           </div>
+
+          
         </div>
       </div>
     </nav>
-
     <section class="container">
-      <audio src="Song/Selamat ulang tahun.mp3" autoplay></audio>
+      <audio class="lagu">
+        <source src="Song/Selamat ulang tahun.mp3" type="audio/mpeg">
+        <source src="Song/Selamat-ulang-tahun.ogg" type="audio/ogg">
+      </audio>
       <section id="main" class="main">
 
         <!-- Calender -->
@@ -109,12 +114,16 @@
 
       </section>
       <section id="message" class="message">
+        <!-- Ucapan -->
+        <div class="ucapan position-absolute top-0 start-50 translate-middle fs-1 fw-bold" >
+          Message For You
+        </div>
         <!-- Photo -->
         <div class="fotoA">
           <img src="Photos/Foto_kenangan1.JPG" alt="" style="top: 6rem; height: 12rem;">
         </div>
         <div class="fotoB">
-          <img src="Photos/Foto_kenangan2.JPG" alt="" style="top: 21.5rem;">
+          <img src="Photos/Foto_kenangan10.JPG" alt="" style="top: 21.5rem;">
         </div>
         <div class="fotoA">
           <img src="Photos/Foto_kenangan3.JPG" alt="" style="top: 38rem;">
@@ -126,16 +135,25 @@
           <img src="Photos/Foto_kenangan5.JPG" alt="" style="top: 70.25rem;">
         </div>
         <div class="fotoB">
-          <img src="Photos/Foto_kenangan6.JPG" alt="" style="top: 86.5rem;">
+          <img src="Photos/Foto_kenangan9.JPG" alt="" style="top: 86rem;">
         </div>
         <div class="fotoA">
-          <img src="Photos/Foto_kenangan9.JPG" alt="" style="top: 102rem; height: 12rem;">
+          <img src="Photos/Foto_kenangan6.JPG" alt="" style="top: 102rem;">
+        </div>
+        <div class="fotoA fotoK">
+          <img src="Photos/Foto_kenangan8.JPG" alt="" style="height: 11rem;">
+        </div>
+        <div class="fotoB fotoK">
+          <img src="Photos/Foto_kenangan18.JPG" alt="" style="height: 11rem;">
+        </div>
+        <div class="fotoC start-50 translate-middle-x">
+          <img class="translate-middle-x" src="Photos/Foto_kenangan11.JPG" alt="" style="top: 138rem;">
         </div>
 
         <!-- Text -->
         <div class="kertasA kertas1 kertas">
           <img src="Photos/kertas3.png"  alt="" style="top: 0rem;">
-          <span d-inline-block style="top: 4.8rem; left: 14rem; font-size: 4rem; text-align: center; line-height: 4rem; padding-top: 3rem;">
+          <span d-inline-block style="top: 4.8rem; font-size: 4rem; text-align: center; line-height: 4rem; padding-top: 3rem;">
             Halo sayang
           </span>
         </div>
@@ -233,5 +251,6 @@
    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="Undangan ririh.js"></script>
   </body>
 </html>
