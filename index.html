@@ -1,487 +1,261 @@
-:root{
-    --pink: #f14e95;
-    --bg: #0a0a0a35;
-    --mainC: #6420AA;
-    --messageC: #FF3EA5;
-    --shadow: 0 2px 2px rgb(0,0,0/0.5);
-}
-
-body{
-    font-size: 1.2 rem;
-    font-family: Arial, Helvetica, sans-serif;
-    min-height: 2000px;
-}
-
-.hero::before{
-    content: '';
-    position: absolute;
-    background-size:cover;
-    background-position: center;
-    background-image: url(Photos/bg\ ririh2.jpeg);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -9999;
-}
-
-.hero{
-    min-height: 100vh;
-    background-color: var(--bg);
-}
-
-.hero h1 {
-    font-family: "Satisfy", cursive;
-}
-
-.hero .img1{
-    height: 10rem;
-    border-radius: 50%;
-}
-
-.hero a{
-    color: var(--pink);
-    background-color: white;
-}
-
-.hero a:hover{
-    color: white;
-    background-color:var(--pink);
-}
-
-.title{
-    font-family: "Satisfy", cursive;
-}
-
-
-
-/* navbar */
-
-.mynavbar {
-    background-color: rgba(255, 255, 255, 0.5) !important;
-}
-
-/* undangan*/
-
-
-.container{
-    margin-top: -3.55rem;
-    /* margin: 0; */
-    min-width: 97.5vw;
-    background: linear-gradient(0deg, #ff048a55, #fcc4e055);
-    background-repeat: repeat;
-    z-index: -999;
-}
-
-.container::before{
-    content: '';
-    position: absolute;
-    background-image: url(Photos/bg_template.png);
-    left: 0;
-    width: 100%;
-    min-height: 800%;
-    z-index: -991;
-}
-
-.main{
-    position: relative;
-    min-height: 110vh;
-    /* background-color: var(--mainC); */
-    padding-top: 7rem;
-    font-family: "Satisfy", cursive;
-}
-
-/* calender start */
-ul {list-style-type: none;}
-body {font-family: Verdana, sans-serif;}
-
-/* Month header */
-.month {
-  padding: 3rem 2rem;
-  width: 70%;
-  background: #1abc9c;
-  text-align: center;
-  margin: 0 auto;
-}
-
-/* Month list */
-.month ul {
-  margin: 0;
-  padding: 0;
-}
-
-.month ul li {
-  color: white;
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-
-/* Previous button inside month header */
-.month .prev {
-  float: left;
-  padding-top: 10px;
-}
-
-/* Next button */
-.month .next {
-  float: right;
-  padding-top: 10px;
-}
-
-/* Weekdays (Mon-Sun) */
-.weekdays {
-  width: 70%;
-  margin: 0 auto;
-  padding: 10px 0;
-  background-color:#ddd;
-}
-
-.weekdays li {
-  display: inline-block;
-  width: 13.6%;
-  color: #666;
-  text-align: center;
-}
-
-/* Days (1-31) */
-.days {
-  padding: 2rem 0;
-  background: #eee;
-  margin: 0 auto;
-  width: 70%;
-}
-
-.days li {
-  list-style-type: none;
-  display: inline-block;
-  width: 13.6%;
-  text-align: center;
-  margin-bottom: 5px;
-  font-size:12px;
-  color: #777;
-}
-
-/* Highlight the "current" day */
-.days li .active {
-  padding: 5px;
-  background: #1abc9c;
-  color: white !important;
-  border-radius: 50%;
-}
-
-/* calender finsh */
-
-
-.message .ucapan{
-    font-family: "Satisfy", cursive;
-}
-
-.message .fotoA img{
-    width: 8rem;
-    left: 62.5rem;
-    position: absolute;
-}
-
-.message .fotoB img{
-    height: 12rem;
-    left: 17.5rem;
-    position: absolute;
-}
-
-.message .fotoC img{
-    height: 12rem;
-    margin: 0 auto;
-    position: absolute;
-}
-
-.message .fotoK img{
-    top: 122rem;
-}
-
-.message{
-    box-sizing: content-box;
-    position: relative;
-    z-index: 1;
-    height: 180rem;
-}
-
-.kertas img{
-    height: 25rem;
-    background-size: cover;
-}
-
-.kertas span{
-    display: inline-block;
-    height: 20rem;
-    width: 17rem;
-    line-height: 1.4rem;
-    font-size: 1.6rem;
-    font-family: "Satisfy", cursive;
-}
-
-.message .kertas2 span div, .message .kertas3 span div, .message .kertas6 span div, .message .kertas7 span div, .message .kertas8 span div{
-    height: 0.5rem;
-}
-
-.message .kertasA img{
-    position: absolute;
-    left: 10rem;
-    z-index: 1; 
-}
-
-.message .kertasB img{
-    position: absolute;
-    left: 55rem;
-    z-index: 1;
-}
-
-.message .kertasC img{
-    position: absolute;
-    left: 32.5rem;
-    z-index: 1;
-}
-
-.message .kertasA span{
-    position: relative;
-    left: 15rem;
-    top: 5rem;
-    z-index: 3;
-}
-
-.message .kertasB span{
-    position: relative;
-    left: 60rem;
-    top: 5rem;
-    z-index: 3;
-}
-
-.message .kertasC span{
-    position: relative;
-    left: 36.5rem;
-    top: 5rem;
-    z-index: 3;
-}
-
-.message .kertas5 ul{
-    font-size: 1.3rem;
-    display: block;
-    margin-left: -1rem;
-    margin-top: 1rem;
-}
-
-.message .kertas5 li{
-    margin-top: 0.1rem;
-    line-height: 1.2rem;
-}
-
-.message .kertas9 span img{
-    position:relative;
-    height: 5rem;
-    left: 0;
-    top: -0.5rem;
-    z-index: 3;
-}
-
-.container::before{
-    min-height: 450rem;
-}
-
-.video{
-    position: relative;
-    min-height: 480vh;
-    font-family: "Satisfy", cursive;
-    text-align: center;
-}
-
-.video video{
-    width: 30rem;
-}
-/* media querry */
-
-/* laptop */
-/* @media(max-width:992px){
-    html{
-        font-size: 75%;
-    }
-
-    .video{
-        min-width: none;
-    }
-} */
-/* tablet */
-@media(max-width:768px){
-    html{
-        font-size: 65%;
-    }
-
-    /* .sticky-top{
-        overflow: hidden;
-    } */
-
-    .container::before{
-        min-height: 682%;
-    }
-    .message .fotoA img{
-        width: 8rem;
-        left: 48.5rem;
-        position: absolute;
-    }
-    
-    .message .fotoB img{
-        height: 12rem;
-        left: 11rem;
-        position: absolute;
-    }
-
-    .message .fotoC img{
-        height: 12rem;
-        left: 11rem;
-        position: absolute;
-    }
- 
-    .message .kertasA img{
-        position: absolute;
-        left: 3rem;
-        z-index: 1; 
-    }
-    
-    .message .kertasB img{
-        position: absolute;
-        left: 40rem;
-        z-index: 1;
-    }
-
-    .message .kertasC img{
-        position: absolute;
-        left: 22.5rem;
-        z-index: 1;
-    }
-    
-    .message .kertasA span{
-        position: relative;
-        left: 8rem;
-        top: 5rem;
-        z-index: 3;
-    }
-    
-    .message .kertasB span{
-        position: relative;
-        left: 45rem;
-        top: 5rem;
-        z-index: 3;
-    }
-    
-    .message .kertasC span{
-        position: relative;
-        left: 26.5rem;
-        top: 5rem;
-        z-index: 3;
-    }
-
-    .video{
-        min-height: 225rem;
-    }
-
-}
-/* phone */
-@media(max-width:576px){
-    html{
-        font-size: 60%;
-    }
-
-
-    .container::before{
-        min-height: 660%;
-    }
-    /* calender */
-
-    .weekdays li {
-        width: 13%;
-      }
-      
-      .days li {
-        width: 13%;
-      }
-
-      .month{
-        width: 65%;
-      }
-
-      .days{
-        width: 65%;
-      }
-
-      .weekdays{
-        width: 65%;
-      }
-
-    .message .fotoA img{
-        width: 8rem;
-        left: 29rem;
-        position: absolute;
-    }
-    
-    .message .fotoB img{
-        height: 12rem;
-        left: 6.5rem;
-        position: absolute;
-    }
-
-    .message .fotoC img{
-        top: 153rem; 
-        left: 11rem;
-        position: absolute;
-    }
-
-    .message .fotoK img{
-        top: 168rem !important;
-    }
- 
-    .message .kertasA img{
-        position: absolute;
-        left: -0.5rem;
-        z-index: 1; 
-    }
-    
-    .message .kertasB img{
-        position: absolute;
-        left: 20rem;
-        z-index: 1;
-    }
-
-    .message .kertasC img{
-        position: absolute;
-        left: 12.5rem;
-        z-index: 1;
-    }
-    
-    .message .kertasA span{
-        position: relative;
-        left: 3.7rem;
-        top: 5rem;
-        z-index: 3;
-    }
-    
-    .message .kertasB span{
-        position: relative;
-        left: 24.5rem;
-        top: 5rem;
-        z-index: 3;
-    }
-    
-    .message .kertasC span{
-        position: relative;
-        left: 17rem;
-        top: 5rem;
-        z-index: 3;
-    }
-
-    .message{
-        height: 190rem;
-    }
-
-    .video{
-        min-height: 300vh;
-    }
-}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Happy Brithday Ririh</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="Undangan ririh.css">
+
+    <!-- Link fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <section id = hero class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
+        <main>
+            <h4>Happy Brithday</h4>
+            <img src="Photos/Gambar ririh.jpeg" alt="" class="img1 img-thumbnail ">
+            <h1>Ana Maria Ririh Sinung Prasetyandari</h1>
+            <p>25 Maret 2024</p>
+
+            <a href="#main" class = "button btn btn-lg mt4">Sweet Twenty</a>
+        </main>
+    </section>
+
+    <nav class="navbar navbar-expand-md bg-body-tertiary sticky-top mynavbar">
+      <div class="container-fluid">
+        <a class="navbar-brand title" href="#">Ririh Sinung Prasetyandari</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title title" id="offcanvasNavbarLabel">Ririh Sinung Prasetyandari</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#main">Your day</a>
+              <a class="nav-link" href="#message">Message</a>
+              <a class="nav-link" href="#video">HBD</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="container">
+      <audio class="lagu" id="lagu">
+        <source src="Song/Selamat ulang tahun.mp3" type="audio/mpeg">
+        <source src="Song/Selamat-ulang-tahun.ogg" type="audio/ogg">
+      </audio>
+      <section id="main" class="main">
+
+        <!-- Calender -->
+        <div style="padding: 1rem;"><h2 style="margin: 0; font-size: 4rem; text-align: center;">Its Your Special Day</h2></div>
+        <div class="month">
+          <ul>
+            <li class="prev">&#10094;</li>
+            <li class="next">&#10095;</li>
+            <li>March<br><span style="font-size:18px">2024</span></li>
+          </ul>
+        </div>
+        
+        <ul class="weekdays">
+          <li>Mo</li>
+          <li>Tu</li>
+          <li>We</li>
+          <li>Th</li>
+          <li>Fr</li>
+          <li>Sa</li>
+          <li>Su</li>
+        </ul>
+        
+        <ul class="days">
+          <li> </li>
+          <li> </li>
+          <li> </li>
+          <li> </li>
+          <li> </li>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+          <li>8</li>
+          <li>9</li>
+          <li>10</li>
+          <li>11</li>
+          <li>12</li>
+          <li>13</li>
+          <li>14</li>
+          <li>15</li>
+          <li>16</li>
+          <li>17</li>
+          <li>18</li>
+          <li>19</li>
+          <li>20</li>
+          <li>21</li>
+          <li>22</li>
+          <li>23</li>
+          <li>24</li>
+          <li><span class="active">25</span></li>
+          <li>26</li>
+          <li>27</li>
+          <li>28</li>
+          <li>29</li>
+          <li>30</li>
+          <li>31</li>
+        </ul>
+
+
+      </section>
+      <section id="message" class="message">
+        <!-- Ucapan -->
+        <div class="ucapan position-absolute top-0 start-50 translate-middle fs-1 fw-bold" >
+          Message For You
+        </div>
+        <!-- Photo -->
+        <div class="fotoA">
+          <img src="Photos/Foto_kenangan1.JPG" alt="" style="top: 6rem; height: 12rem;">
+        </div>
+        <div class="fotoB">
+          <img src="Photos/Foto_kenangan10.JPG" alt="" style="top: 26.5rem;">
+        </div>
+        <div class="fotoA">
+          <img src="Photos/Foto_kenangan3.JPG" alt="" style="top: 48rem;">
+        </div>
+        <div class="fotoB">
+          <img src="Photos/Foto_kenangan4.JPG" alt="" style="top: 72.5rem;">
+        </div>
+        <div class="fotoA">
+          <img src="Photos/Foto_kenangan5.JPG" alt="" style="top: 92rem;">
+        </div>
+        <div class="fotoB">
+          <img src="Photos/Foto_kenangan9.JPG" alt="" style="top: 112.5rem;">
+        </div>
+        <div class="fotoA">
+          <img src="Photos/Foto_kenangan6.JPG" alt="" style="top: 133rem;">
+        </div>
+        <div class="fotoA fotoK">
+          <img src="Photos/Foto_kenangan8.JPG" alt="" style="height: 11rem; top: 153rem;">
+        </div>
+        <div class="fotoB fotoK">
+          <img src="Photos/Foto_kenangan18.JPG" alt="" style="height: 11rem; top: 153rem;">
+        </div>
+        <div class="fotoC start-50 translate-middle-x">
+          <img class="translate-middle-x" src="Photos/Foto_kenangan11.JPG" alt="" style="top: 138rem;">
+        </div>
+
+        <!-- Text -->
+        <div class="kertasA kertas1 kertas">
+          <img src="Photos/kertas3.png"  alt="" style="top: 0rem;">
+          <span d-inline-block style="top: 4.8rem; font-size: 4rem; text-align: center; line-height: 4rem; padding-top: 3rem;">
+            Halo sayang
+          </span>
+        </div>
+        <div class="kertasB kertas2 kertas">
+          <img src="Photos/kertas3.png"  alt="" style="top: 20rem;">
+          <span d-inline-block>
+            <h1>Happy Brithday</h1>
+            <div></div>
+            <p>Selamat Ulang Tahun ke-20 tahun cantikku. Sekarang udah makin dewasa sudah bukan bochil lagi kamu hehe... </p>
+          </span>
+        </div>
+
+        <div class="kertasA kertas3 kertas">
+          <img src="Photos/kertas3.png"  alt="" style="top: 40rem;">
+          <span d-inline-block>
+            <h1>Make a Wish</h1>
+            <div></div>
+            <p>Segala doa, harapan, dan cita-citamu dapat segera kamu wujudkan. Aku juga mohon agar kamu selalu diberi kesehatan, 
+              dilancarkan segala usahamu, dan juga dilimpahkan kebahagiaan juga rezeki serta selalu dalam perlindungan Tuhan Yesus Kristus, Amin.</p>
+          </span>
+        </div>
+
+        <div class="kertasA kertas4 kertas">
+          <img src="Photos/kertas3.png"  alt="" style="top: 45.8rem;">
+        </div>
+
+        <div class="kertasB kertas5 kertas">
+          <img src="Photos/kertas3.png"  alt="" style="top: 66rem;">
+          <span d-inline-block style="top: 11rem;">
+            <h1>Note</h1>
+            <div></div>
+            <ul>
+              <li>Selalu semangat</li>
+              <li>Selalu bahagia</li>
+              <li>Rajin ibadahnya</li>
+              <li>Semakin rajin belajarnya</li>
+              <li>Kurangi mutungnya</li>
+              <li>Kurangi insecurenya</li>
+              <li>Makin mandiri</li>
+              <li>Semangat kerja dan kuliahnya</li>
+            </ul>
+          </span>
+        </div>
+
+        <div class="kertasA kertas6 kertas">
+          <img src="Photos/kertas3.png"  alt="" style="top: 86rem;">
+          <span d-inline-block style="top: 11rem;">
+            <h1>For my love</h1>
+            <div></div>
+            <p>Kalo ada apa-apa cerita, aku akan menjadi pendengar yang baik dan juga
+              sebisa mungkin akan membantumu menghadapi permasalahanmu.
+            </p>
+          </span>
+        </div>
+
+        <div class="kertasB kertas7 kertas">
+          <img src="Photos/kertas3.png"  alt="" style="top: 106rem;">
+          <span d-inline-block style="top: 11rem;">
+            <h1>For my love</h1>
+            <div></div>
+            <p>Aku juga minta maaf, selama ini aku banyak salah ke kamu. Maaf aku sering bohong, sering hilang kabar, jarang pulang.
+              Tapi pelan-pelan pasti bakal aku ubah, dan jadi lebih baik.
+            </p>
+          </span>
+        </div>
+
+        <div class="kertasA kertas8 kertas">
+          <img src="Photos/kertas3.png"  alt="" style="top: 126rem">
+          <span d-inline-block style="top: 11rem;">
+            <h1>For my love</h1>
+            <div></div>
+            <p>Aku harap kita dapat selalu sama-sama terus, saling menjaga dan juga
+              saling mengingatkan. Kita banyakin kenangan indah bersama.
+            </p>
+          </span>
+        </div>
+
+        <div class="kertasC kertas9 kertas">
+          <img src="Photos/kertas3.png"  alt="" style="top: 146rem;">
+          <span d-inline-block style="text-align: center; top: 11rem;">
+            <h1>For my love</h1>
+            <div></div>
+            <p>I Love You</p>
+            <img class="love" src="Photos/Love.png" alt="">
+            <p>Ana Maria Ririh Sinung Prasetyandari</p>
+          </span>
+        </div>
+
+      </section>
+      <section id="video" class="video" >
+        <div style="margin-top: 1rem;"><h1>From Your Special</h1></div>
+        <video src="Video/Video David.mp4" class="position-absolute start-50 translate-middle" controls style="top: 35rem;"></video>
+        <video src="Video/Video Anin.mp4" class="position-absolute start-50 translate-middle" controls style="top: 85rem;"></video>
+        <video src="Video/Video Agnes.mp4" class="position-absolute start-50 translate-middle" controls style="top: 135rem;"></video>
+        <video src="Video/Video Intan.mp4" class="position-absolute start-50 translate-middle" controls style="top: 192rem;"></video>
+      </section>
+   </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="Undangan ririh.js"></script>
+  </body>
+</html>
