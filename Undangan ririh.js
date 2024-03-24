@@ -7,26 +7,22 @@ const humburger = document.querySelector(".navbar-toggler");
 const btnClose = document.querySelector(".btn-close");
 const stickyTop =  document.querySelector(".sticky-top");
 
-
+let laguString = "";
+// console.log(laguString)
 tombol.addEventListener('click', function() {
-    const song = document.createElement('audio')
-    song.setAttribute("src", "Song/Selamat ulang tahun.mp3");
-    song.setAttribute("autoplay", "")
+    const att = lagu.attributes;
+    for (let i = 0; i < att.length; i++) {
+        laguString += att[i].value;
+    }
+
+    console.log(laguString);
+    if (laguString.includes('autoplay')) {
+        console.log('1')
+    }
+     else {
+        lagu.setAttribute("src", "Song/Selamat ulang tahun.mp3");
+        lagu.volume = 0.2;
+        lagu.setAttribute("autoplay", "");
+        lagu.setAttribute("loop", "");
+    }
 });
-
-// humburger.addEventListener("click" , function(){
-//     stickyTop.style.overflow = 'visible';
-// });
-
-// btnClose.addEventListener("click" , function(){
-//     stickyTop.style.overflow = 'hidden';
-// });
-
-// document.addEventListener("DOMContentLoaded", function() {
-//     const tombol = document.querySelector(".button");
-//     const lagu = document.querySelector(".lagu");
-
-//     tombol.addEventListener('click', function() {
-//         lagu.setAttribute("autoplay", "");
-//     });
-// });
