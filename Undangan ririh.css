@@ -430,7 +430,7 @@ body {font-family: Verdana, sans-serif;}
 
     .message .fotoC img{
         top: 153rem; 
-        left: 7rem;
+        left: 8.5rem;
         position: absolute;
     }
 
@@ -452,7 +452,7 @@ body {font-family: Verdana, sans-serif;}
 
     .message .kertasC img{
         position: absolute;
-        left: 6.5rem;
+        left: 8rem;
         z-index: 1;
     }
     
@@ -472,7 +472,7 @@ body {font-family: Verdana, sans-serif;}
     
     .message .kertasC span{
         position: relative;
-        left: 11rem;
+        left: 12.5rem;
         top: 5rem;
         z-index: 3;
     }
@@ -482,6 +482,6 @@ body {font-family: Verdana, sans-serif;}
     }
 
     .video{
-        min-height: 300vh;
+        min-height: 270vh;
     }
 }
