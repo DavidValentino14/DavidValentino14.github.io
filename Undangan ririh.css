@@ -418,13 +418,13 @@ body {font-family: Verdana, sans-serif;}
 
     .message .fotoA img{
         width: 8rem;
-        left: 27rem;
+        left: 24rem;
         position: absolute;
     }
     
     .message .fotoB img{
         height: 12rem;
-        left: 8.5rem;
+        left: 11.5rem;
         position: absolute;
     }
 
@@ -440,39 +440,39 @@ body {font-family: Verdana, sans-serif;}
  
     .message .kertasA img{
         position: absolute;
-        left: 1.5rem;
+        left: 4.5rem;
         z-index: 1; 
     }
     
     .message .kertasB img{
         position: absolute;
-        left: 18rem;
+        left: 15rem;
         z-index: 1;
     }
 
     .message .kertasC img{
         position: absolute;
-        left: 12.5rem;
+        left: 10.5rem;
         z-index: 1;
     }
     
     .message .kertasA span{
         position: relative;
-        left: 5.7rem;
+        left: 8.7rem;
         top: 5rem;
         z-index: 3;
     }
     
     .message .kertasB span{
         position: relative;
-        left: 22.5rem;
+        left: 19.5rem;
         top: 5rem;
         z-index: 3;
     }
     
     .message .kertasC span{
         position: relative;
-        left: 17rem;
+        left: 15rem;
         top: 5rem;
         z-index: 3;
     }
