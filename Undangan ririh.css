@@ -289,7 +289,7 @@ body {font-family: Verdana, sans-serif;}
 
 .video{
     position: relative;
-    min-height: 480vh;
+    min-height: 473vh;
     font-family: "Satisfy", cursive;
     text-align: center;
 }
@@ -392,7 +392,7 @@ body {font-family: Verdana, sans-serif;}
 
 
     .container::before{
-        min-height: 660%;
+        min-height: 650%;
     }
     /* calender */
 
@@ -418,13 +418,13 @@ body {font-family: Verdana, sans-serif;}
 
     .message .fotoA img{
         width: 8rem;
-        left: 29rem;
+        left: 27rem;
         position: absolute;
     }
     
     .message .fotoB img{
         height: 12rem;
-        left: 6.5rem;
+        left: 8.5rem;
         position: absolute;
     }
 
@@ -440,13 +440,13 @@ body {font-family: Verdana, sans-serif;}
  
     .message .kertasA img{
         position: absolute;
-        left: -0.5rem;
+        left: 1.5rem;
         z-index: 1; 
     }
     
     .message .kertasB img{
         position: absolute;
-        left: 20rem;
+        left: 18rem;
         z-index: 1;
     }
 
@@ -458,14 +458,14 @@ body {font-family: Verdana, sans-serif;}
     
     .message .kertasA span{
         position: relative;
-        left: 3.7rem;
+        left: 5.7rem;
         top: 5rem;
         z-index: 3;
     }
     
     .message .kertasB span{
         position: relative;
-        left: 24.5rem;
+        left: 22.5rem;
         top: 5rem;
         z-index: 3;
     }
