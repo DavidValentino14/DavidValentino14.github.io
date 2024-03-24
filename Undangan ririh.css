@@ -424,7 +424,7 @@ body {font-family: Verdana, sans-serif;}
     
     .message .fotoB img{
         height: 12rem;
-        left: 6.5rem;
+        left: 2.5rem;
         position: absolute;
     }
 
@@ -440,7 +440,7 @@ body {font-family: Verdana, sans-serif;}
  
     .message .kertasA img{
         position: absolute;
-        left: 4.5rem;
+        left: 0.5rem;
         z-index: 1; 
     }
     
@@ -458,7 +458,7 @@ body {font-family: Verdana, sans-serif;}
     
     .message .kertasA span{
         position: relative;
-        left: 8.7rem;
+        left: 4.7rem;
         top: 5rem;
         z-index: 3;
     }
